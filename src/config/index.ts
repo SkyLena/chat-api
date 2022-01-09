@@ -1,2 +1,2 @@
-export * from "./database"
-export { ROUTES } from "./routes"
+export * from './database';
+export { ROUTES } from './routes';

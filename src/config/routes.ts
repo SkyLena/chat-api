@@ -1,9 +1,10 @@
 export const ROUTES = {
     Auth: {
-        main: "/auth",
-        logIn: "/log-in"
+        main: '/auth',
+        signIn: '/sign-in',
+        signUp: '/sign-up',
     },
     Users: {
-        main: "/users"
-    }
-}
+        main: '/users',
+    },
+};

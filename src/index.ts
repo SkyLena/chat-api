@@ -1,8 +1,8 @@
-import express from "express";
-import dotenv from "dotenv";
-import {authRouter} from "./auth";
-import {userRouter} from "./users";
-import {ROUTES, databaseConnect} from "./config";
+import dotenv from 'dotenv';
+import express from 'express';
+import { authRouter } from './auth';
+import { userRouter } from './users';
+import { ROUTES, databaseConnect } from './config';
 
 dotenv.config();
 
@@ -13,8 +13,8 @@ const server = express();
 server.use(ROUTES.Auth.main, authRouter);
 server.use(ROUTES.Users.main, userRouter);
 
-server.listen(PORT,async () => {
-    console.log("Server listen port:", PORT);
+server.listen(PORT, async () => {
+    console.log('Server listen port:', PORT);
 
     await databaseConnect();
-})
+});
